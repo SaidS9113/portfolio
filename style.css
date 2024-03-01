@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Pour empêcher le défilement de la page */
+}
+
+.fond-inspirant {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('imagedév/principale.jpg'); /* Image ou couleur de fond inspirante */
+    background-size: cover;
+    background-position: center;
+    animation: inspirer 1s infinite alternate; /* Animation pour le fond inspirant */
+}
+
+@keyframes inspirer {
+    0% {
+        opacity: 0; /* Opacité initiale pour créer un effet subtil */
+    }
+    100% {
+        opacity: 3; /* Opacité maximale pour mettre en valeur l'image ou le paysage */
+    }
+}
+
+
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./imagedév/principale.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo a{
+    color: #fff;
+    padding: 0px  20px;
+    position: absolute;
+    top: 870px;
+    left: 750px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    font-size: 6rem;
+}
+
+.logo span.A{
+    color: rgb(238, 56, 11);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+   
+    margin: 10px;
+    font-weight: bold;
+    transition: 0,6s ease;
+}
+
+ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background: #fff;
+    color: #000;
+}
+
+.navbar{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.titre{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.titre h1{
+    color: #fffbfb;
+    font-size: 92px;
+}
+
+.bouton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bouton a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8%;
+    font-size: 1.8rem;
+    
+}
+
+.btn{
+    transition: 00.6 ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.titre span{
+    margin-left: 13%;
+
+}
